@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/Homepage';
 import { LandingPage } from './pages/LandingPage';
 import './App.css';
-
+import 'antd/dist/reset.css';
 
 
 function App() {

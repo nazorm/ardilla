@@ -1,0 +1,33 @@
+.top-nav {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  @media only screen  and (min-width: 900px) {
+    display: flex;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 5px 0;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .dropdown-caret {
+    width: 10px;
+    height: 10px;
+    margin-left: 8px;
+  }
+  
+}
+
+.beta{
+  border: 1px solid #ffffff;
+  padding: 1px;
+  border-radius: 4px;
+}

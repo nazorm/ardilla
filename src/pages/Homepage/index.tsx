@@ -1,14 +1,14 @@
 import React from 'react';
 import './styles.scss';
 import { Link } from 'react-router-dom';
+import { Header } from '../components/Layout/Header';
+import { Introduction } from './components/Introduction';
 
 export const HomePage = () => {
-    return (
-        <main>
-            <h1 className='heading'> Home page</h1>
-            <Link to={"/landing-page"}>
-                Go to landing
-            </Link>
-        </main>
-    )
+  return (
+    <main>
+      <Header btnType='primary' bgColor='#240053' />
+      <Introduction />
+    </main>
+  )
 };
