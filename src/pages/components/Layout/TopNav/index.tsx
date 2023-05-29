@@ -4,31 +4,34 @@ import { Menu, Dropdown } from 'antd';
 import dropdownCaret from '../../../../assets/icons/dropdown-caret.svg';
 
 export const TopNav = () => {
-    const menu = (
-        <Menu>
-            <Menu.Item key="0">
-                <a target="_blank" rel="noopener noreferrer" href="/">Save</a>
-            </Menu.Item>
-            <Menu.Item key="1">
-                <a target="_blank" rel="noopener noreferrer" href="/">Invest</a>
-            </Menu.Item>
-            <Menu.Divider />
-            <Menu.Item key="1">
-                <a target="_blank" rel="noopener noreferrer" href="/">Learn</a>
-            </Menu.Item>
-            <Menu.Item key="1">
-                <a target="_blank" rel="noopener noreferrer" href="/">Budget</a>
-            </Menu.Item>
-            <Menu.Item key="1">
-                <a target="_blank" rel="noopener noreferrer" href="/">Insurance</a>
-            </Menu.Item>
-        </Menu>
-    );
+    const items = [
+        {
+            label: <a target="_blank" rel="noopener noreferrer" href="/">Save</a>,
+            key: '1'
+        },
+        {
+            label: <a target="_blank" rel="noopener noreferrer" href="/">Invest <span style={{color: 'grey'}}>(coming soon)</span> </a>,
+            key: '2'
+        },
+        {
+            label: <a target="_blank" rel="noopener noreferrer" href="/">Learn</a>,
+            key: '3'
+        },
+        {
+            label: <a target="_blank" rel="noopener noreferrer" href="/">Budget <span style={{color: 'grey'}}>(coming soon)</span> </a>,
+            key: '4'
+        },
+        {
+            label: <a target="_blank" rel="noopener noreferrer" href="/">Insurance<span style={{color: 'grey'}}>(coming soon)</span> </a>,
+            key: '5'
+        },
+
+    ]
     return (
         <nav className='top-nav'>
             <ul className='top-nav__list'>
                 <li className='top-nav__item'>
-                    <Dropdown overlay={menu}>
+                    <Dropdown menu={{ items }}>
                         <a href='/' className="top-nav__item">
                             Products
                             <img src={dropdownCaret} alt='dropdown-caret' className='dropdown-caret' />
@@ -41,7 +44,7 @@ export const TopNav = () => {
                     </a>
                 </li>
                 <li className='top-nav__item'>
-                    <Dropdown overlay={menu}>
+                    <Dropdown menu={{ items }}>
                         <a href='/' className="top-nav__item">
                             Comapny
                             <img src={dropdownCaret} alt='dropdown-caret' className='dropdown-caret' />

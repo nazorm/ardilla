@@ -137,7 +137,8 @@ export const TransparentOpportunities = () => {
                 </div>
             </section>
 
-            <section className='traction-container'>
+            <section className='traction-section'>
+                <div className='traction-container'>
                 <h2 className='traction-heading'>Traction</h2>
                 <h4 className='traction-subheading'>Our products and investments grossed 1.1 billion in 2022</h4>
                 <div className='tractions'>
@@ -155,6 +156,8 @@ export const TransparentOpportunities = () => {
                         )
                     })}
                 </div>
+                </div>
+     
             </section>
         </>
     )

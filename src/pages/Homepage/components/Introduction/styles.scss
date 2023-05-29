@@ -7,6 +7,9 @@
   @media only screen and (min-width: 1024px) {
     padding-top: 100px;
   }
+  @media only screen and (min-width: 1440px) {
+    background-repeat: repeat;
+  }
   &__heading {
     font-weight: 800;
     font-size: 18px;

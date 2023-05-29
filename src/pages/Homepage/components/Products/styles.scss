@@ -15,7 +15,6 @@
     line-height: 110px;
     margin-bottom: 0px;
   }
-
 }
 .product {
   width: 90%;
@@ -38,14 +37,15 @@
       align-self: end;
       margin: 0;
     }
-    @media only screen and (min-width: 1024px) {
-      width: 30%;
-    }
   }
 }
 .product-track {
   width: 100%;
   @media only screen and (min-width: 700px) {
+    width: 95%;
+    margin: auto;
+  }
+  @media only screen and (min-width: 1400px) {
     width: 80%;
     margin: auto;
   }
@@ -57,19 +57,18 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
-    // margin-bottom: 15px;
   }
   &__catchphrase {
     color: #3d0072;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 5px;
+    font-size: 15px;
+    line-height: .8;
   }
   &__info {
     color: #9ca3af;
     font-weight: 700;
     font-size: 15px;
-    line-height: 0;
+   
   }
   &__list {
     padding-left: 0;
@@ -80,22 +79,11 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-
+    display: flex;
     margin-bottom: 12px;
   }
 }
 
 .check {
   margin-right: 10px;
-}
-
-.splide__progress {
-  background: #ccc;
-}
-
-.splide__progress__bar {
-  background: greenyellow;
-  height: 5px;
-  transition: width 400ms ease;
-  width: 0;
 }
