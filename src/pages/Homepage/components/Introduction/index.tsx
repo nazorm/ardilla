@@ -1,7 +1,6 @@
 import React from 'react';
 import './styles.scss';
 import { Button } from '../../../components/Button';
-
 import demo from '../../../../assets/demo.png';
 
 
