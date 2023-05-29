@@ -1,6 +1,7 @@
 .interest-transparency-container,
 .investment-section,
-.testimonials-section {
+.testimonials-section,
+.review-section {
   width: 100%;
   background: #ffffff;
   border: 1px solid #ffffff;
@@ -11,7 +12,7 @@
 }
 .testimonials-section {
   background-color: #f3f4f6;
-  border: 1px solid #fffdf2;
+  border: 1px solid #f3f4f6;
 }
 .interest-transparency,
 .investment-container,
@@ -31,15 +32,14 @@
 .transparency-text,
 .investment__heading,
 .access__heading,
-.testimonial-heading {
+.testimonial-heading,
+.preview-heading,
+.traction-heading {
   font-weight: 800;
   font-size: 30px;
   line-height: 1;
   color: #3d0072;
   margin-bottom: 20px;
-  // @media only screen and (min-width: 700px) {
-  //   font-size: 40px;
-  // }
   @media only screen and (min-width: 1024px) {
     font-size: 60px;
   }
@@ -57,10 +57,15 @@
   }
 }
 .interest-info,
-.testimonial-subheading {
+.testimonial-subheading,
+.preview-subheading,
+.investment__info,
+.access__info,
+.traction-subheading {
   font-weight: 500;
   font-size: 18px;
   color: #3d0072;
+  line-height: 1.8;
 }
 
 .investment-container {
@@ -72,19 +77,11 @@
 }
 
 .investment {
-  &__heading {
-    line-height: 1.4;
-    // font-size: 60px;
-  }
   &__heading-highlight {
     color: #0d9488;
     display: inline;
   }
   &__info {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #3d0072;
     margin-top: 20px;
     @media only screen and (min-width: 700px) {
       width: 55%;
@@ -111,7 +108,6 @@
   background-image: url("../../../../assets/access-bg.png");
   text-align: center;
   padding-top: 10px;
-  // background-repeat: no-repeat;
   background-position: center center;
 }
 .access {
@@ -123,9 +119,9 @@
     color: #ffffff;
   }
   &__info {
+    color: #ffffff;
     @media only screen and (min-width: 700px) {
       width: 75%;
-      line-height: 1.8;
     }
   }
 }
@@ -194,10 +190,6 @@
 .testimonials-container {
   display: block;
 }
-
-.testimonials {
-}
-
 .testimony {
   position: relative;
   margin-top: 10%;
@@ -274,3 +266,236 @@
 .play-container {
   display: none;
 }
+.review-section {
+  text-align: center;
+}
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 4% auto;
+  @media only screen and (min-width: 700px) {
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 550px;
+    justify-content: space-between;
+  }
+  .review-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: start;
+    color: #3d0072;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    border-left: 0;
+    width: 120px;
+    margin: 10px 10px 0;
+    @media only screen and (min-width: 700px) {
+      border-left: 1px solid;
+      border-bottom: 0;
+      padding: 12px 0 0 20px;
+      width: 150px;
+      margin: 10px;
+      height: 50px;
+    }
+  }
+}
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media only screen and (min-width: 700px) {
+    width: 350px;
+  }
+}
+.preview-container {
+  width: 100%;
+  text-align: center;
+  background: #f3f4f6;
+  border-radius: 20px;
+  padding: 30px 30px 0;
+  @media only screen and (min-width: 700px) {
+    width: 80%;
+    margin: 5% auto;
+  }
+  .preview-heading {
+    font-size: 30px;
+  }
+  .preview-subheading {
+    @media only screen and (min-width: 700px) {
+      width: 55%;
+      margin: 3% auto;
+    }
+  }
+  .preview-image {
+    width: 90%;
+  }
+}
+
+.traction-container {
+  background-image: url("../../../../assets/traction-bg.png");
+  text-align: center;
+  padding-top: 10%;
+  background-position: center center;
+}
+.traction-heading,
+.traction-subheading {
+  color: white;
+}
+.tractions {
+  width: 80%;
+  margin: 10% auto 20%;
+  height: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (min-width: 500px) {
+    flex-direction: row;
+    height: 500px;
+  }
+}
+
+.traction {
+  width: 250px;
+  height: 380px;
+  border-radius: 70px 70px 70px 0px;
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.8px;
+  @media only screen and (min-width: 500px) {
+    width: 190px;
+    height: 300px;
+  }
+  @media only screen and (min-width: 1024px) {
+    width: 250px;
+    height: 350px;
+  }
+  @media only screen and (min-width: 1400px) {
+    width: 300px;
+    height: 400px;
+  }
+
+  &__spiro {
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 28%;
+    @media only screen and (min-width: 500px) {
+      width: 200px;
+    }
+    @media only screen and (min-width: 1024px) {
+      width: 240px;
+    }
+    @media only screen and (min-width: 1400px) {
+      width: 280px;
+    }
+  }
+  &:nth-child(1) {
+    background: #d2ffde;
+    border-radius: 70px 70px 0px 70px;
+    color: #2a332c;
+    .traction__info {
+      background-color: #2a332c;
+    }
+  }
+  &:nth-child(2) {
+    background: #c8c1fd;
+    color: #282733;
+    .traction__info {
+      background-color: #282733;
+    }
+  }
+  &:nth-child(3) {
+    background: #faf7c3;
+    .traction__name {
+      color: #9f9704;
+    }
+    .traction__info {
+      background: #9f9704;
+    }
+    .traction__risk {
+      color: #333228;
+    }
+  }
+  &__name {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+  }
+  .traction__info {
+    color: white;
+    padding: 2px 5px 2px 2px;
+  }
+}
+
+.traction__risk {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.8px;
+}
+.traction:nth-child(odd) {
+  .traction__risk {
+    &:before {
+      content: "₦100M";
+      animation: changeText 5s infinite 0s;
+    }
+    @keyframes changeText {
+      0% {
+        content: "₦100M";
+      }
+      20% {
+        content: "₦100M";
+      }
+      40% {
+        content: "₦200M";
+      }
+      60% {
+        content: "₦300M";
+      }
+      80% {
+        content: "₦900M";
+      }
+      100% {
+        content: "₦1.1B";
+      }
+    }
+  }
+}
+
+.traction:nth-child(2) {
+  .traction__risk {
+    &:before {
+      content: "0% Risk";
+      animation: changeRisk 5s infinite 0s;
+    }
+    @keyframes changeRisk {
+      0% {
+        content: "0% Risk";
+      }
+      20% {
+        content: "0% Risk";
+      }
+      40% {
+        content: "90% Risk";
+      }
+      60% {
+        content: "80% Risk";
+      }
+      80% {
+        content: "20% Risk";
+      }
+      100% {
+        content: "10% Risk";
+      }
+    }
+  }
+}
+
+

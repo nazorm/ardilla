@@ -5,6 +5,10 @@ import dreamsIcon from "../../../../assets/icons/dreams.svg";
 import testifier1 from "../../../../assets/testifier1.png";
 import testifier2 from "../../../../assets/testifier2.png";
 import testifier3 from "../../../../assets/testifier3.png";
+import zikoko from "../../../../assets/zikoko.png";
+import techCrunch from "../../../../assets/tech-crunch.png";
+import guardian from "../../../../assets/gaurdian.png";
+
 
 export const offers = [
   {
@@ -58,5 +62,38 @@ export const testifierData = [
     testifierImg: testifier3,
     name: "MD - Miss Oyinye Dallas",
     testimony: "What is Ardila and it benefits?",
+  },
+];
+
+export const pressReviews = [
+  {
+    name: "zikoko",
+    companyLogo: zikoko,
+  },
+  {
+    name: "techCrunch",
+    companyLogo: techCrunch,
+  },
+  {
+    name: "gaurdian",
+    companyLogo: guardian,
+  },
+];
+
+export const tractionDetails = [
+  {
+    name: "Investment in",
+    info: ' 2022',
+    risk : '₦100M'
+  },
+  {
+    name: "Risk",
+    info: 'Management',
+    risk: '0% Risk'
+  },
+  {
+    name: "Investment",
+    info: 'paid back',
+    risk : '₦100M'
   },
 ];

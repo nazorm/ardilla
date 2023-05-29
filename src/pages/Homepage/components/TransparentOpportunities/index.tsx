@@ -6,35 +6,35 @@ import stockArrow from '../../../../assets/stock-arrow.png'
 import playIcon from '../../../../assets/icons/play-icon.svg'
 import { Carousel } from 'antd';
 import { Link } from 'react-router-dom';
-import { offers, testifierData } from './data';
-
-
+import { offers, pressReviews, testifierData, tractionDetails } from './data';
+import previewImage from '../../../../assets/ardilla-preview.png'
+import spiro from "../../../../assets/icons/spiro.svg";
 
 
 export const TransparentOpportunities = () => {
     const responsive = [
         {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-          }
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+            }
         },
         {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
         },
         {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
         }
-      ]
+    ]
     //TODO handle get started
     const handleGetStarted = () => {
 
@@ -115,6 +115,46 @@ export const TransparentOpportunities = () => {
                         </Carousel>
                     </div>
                 </section>
+            </section>
+
+            <section className='review-section'>
+                <div className='reviews-container'>
+                    <p className='review-text'>Press Reviews</p>
+                    <div className='reviews'>
+                        {pressReviews.map((data) => {
+                            return (
+                                <div className='review'>
+                                    <img src={data.companyLogo} className='review__image' alt='review' />
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+                <div className='preview-container'>
+                    <h2 className='preview-heading'>Also Available on the Web</h2>
+                    <p className='preview-subheading'>Increase your bread & butter on the app or on the web. The Ardilla app services are also available on the web.</p>
+                    <img src={previewImage} alt='preview' className='preview-image' />
+                </div>
+            </section>
+
+            <section className='traction-container'>
+                <h2 className='traction-heading'>Traction</h2>
+                <h4 className='traction-subheading'>Our products and investments grossed 1.1 billion in 2022</h4>
+                <div className='tractions'>
+                    {tractionDetails.map((data) => {
+                        return (
+                            <div key={data.name} className='traction'>
+                                <img src={spiro} className='traction__spiro' alt='spiro' />
+                                <span className='traction__name'>
+                                    {data.name}
+                                    {' '}
+                                    <span className='traction__info'>{data.info}</span>
+                                </span>
+                                <p className='traction__risk'></p>
+                            </div>
+                        )
+                    })}
+                </div>
             </section>
         </>
     )
