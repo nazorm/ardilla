@@ -9,6 +9,13 @@ $primary-color: #240053;
     font-size: 50px;
   }
 }
+@mixin intro-text{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+}
 .App {
 }
 .carousel-track {

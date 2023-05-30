@@ -1,0 +1,110 @@
+@import "../../../../App.scss";
+
+.landing-introduction {
+  position: relative;
+  width: 100%;
+  border: 1px solid transparent;
+  background-image: url("../../assets/landing-bg.png");
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 600px;
+  // background-size: contain;
+  @media only screen and (min-width: 700px) {
+    height: 500px;
+  }
+  @media only screen and (min-width: 1400px) {
+    height: 900px;
+  }
+}
+
+.landing-header {
+  width: 100%;
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.feature {
+  display: none;
+  @media only screen and (min-width: 500px) {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 125.9%;
+    color: #ffffff;
+  }
+}
+.hamburger {
+  display: block;
+  @media only screen and (min-width: 500px) {
+    display: none;
+  }
+}
+.landing-intro-text-container {
+  text-align: center;
+  width: 90%;
+  margin: 5% auto;
+  color: white;
+  position: relative;
+  @media only screen and (min-width: 700px) {
+    width: 40%;
+  }
+  @media only screen and (min-width: 1000px) {
+    width: 48%;
+  }
+  @media only screen and (min-width: 1400px) {
+    width: 40%;
+  }
+}
+.spotlight-image {
+  position: absolute;
+  top: 40%;
+  right: 24%;
+  width: 30%;
+  @media only screen and (min-width: 500px) {
+    top: 45%;
+  }
+  @media only screen and (min-width: 1000px) {
+    top: 54%;
+  }
+  @media only screen and (min-width: 1400px) {
+    top: 58%;
+    right: 24%;
+    width: 30%;
+  }
+}
+.landing-introduction__heading {
+  font-weight: 700;
+  font-size: 57.1482px;
+  line-height: 110.5%;
+  text-align: center;
+  color: #ffffff;
+  @media only screen and (min-width: 700px) {
+    font-size: 70px;
+  }
+  @media only screen and (min-width: 1000px) {
+    font-size: 80px;
+  }
+  @media only screen and (min-width: 1400px) {
+    font-size: 90px;
+  }
+}
+.landing-introduction__text {
+  @include intro-text;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.overlay {
+  position: absolute;
+  top: 55%;
+  width: 50%;
+  right: 0%;
+  @media only screen and (min-width: 700px) {
+    top: 20%;
+    width: 25%;
+  }
+}
+.overlay-image {
+  width: 100%;
+}
