@@ -7,7 +7,7 @@ import playIcon from '../../../../assets/icons/play-icon.svg'
 import { Carousel } from 'antd';
 import { Link } from 'react-router-dom';
 import { offers, pressReviews, testifierData, tractionDetails } from './data';
-import previewImage from '../../../../assets/ardilla-preview.png'
+import previewImage from '../../../../assets/ardilla-preview.svg'
 import spiro from "../../../../assets/icons/spiro.svg";
 
 
