@@ -1,5 +1,14 @@
 $primary-color: #240053;
-
+@mixin heading {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1;
+  color: #3d0072;
+  margin-bottom: 20px;
+  @media only screen and (min-width: 1024px) {
+    font-size: 50px;
+  }
+}
 .App {
 }
 .carousel-track {

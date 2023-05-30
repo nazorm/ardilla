@@ -22,7 +22,7 @@ export const Footer = () => {
             <div className='footer'>
                 {FooterLinks.map((data) => {
                     return (
-                        <div key={data.name} >
+                        <div key={data.name} className='footer__resource'>
                             <h5 className='footer__name'>{data.name}</h5>
                             <ul className='footer__list'>
                                 {data.links.map((link) => {
@@ -34,7 +34,7 @@ export const Footer = () => {
                         </div>
                     )
                 })}
-                <div>
+                <div className='footer__resource'>
                     <div>
                         <h5 className='footer__name'>Address</h5>
                         <ul className='footer__list'>

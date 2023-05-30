@@ -1,3 +1,5 @@
+@import "../../../../App.scss";
+
 .interest-transparency-container,
 .investment-section,
 .testimonials-section,
@@ -35,14 +37,7 @@
 .testimonial-heading,
 .preview-heading,
 .traction-heading {
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 1;
-  color: #3d0072;
-  margin-bottom: 20px;
-  @media only screen and (min-width: 1024px) {
-    font-size: 60px;
-  }
+  @include heading;
 }
 .transparency-highlight,
 .testimonial-highlight {
@@ -334,7 +329,7 @@
 }
 .traction-section {
   background-image: url("../../../../assets/traction-bg.png");
-  border: 1px solid;
+  border: 1px solid #3D0072;
 }
 .traction-container {
   width: 90%;

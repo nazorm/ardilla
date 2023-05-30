@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-import { Menu, Dropdown } from 'antd';
+import {Dropdown } from 'antd';
 import dropdownCaret from '../../../../assets/icons/dropdown-caret.svg';
 
 export const TopNav = () => {
