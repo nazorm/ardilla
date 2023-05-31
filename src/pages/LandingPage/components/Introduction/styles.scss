@@ -26,6 +26,9 @@
 }
 .feature {
   display: none;
+  &:hover{
+    cursor: pointer;
+  }
   @media only screen and (min-width: 500px) {
     display: block;
     font-weight: 500;

@@ -352,3 +352,13 @@
   line-height: 32px;
   color: #000000;
 }
+
+.arrow-container {
+  margin-top: 20px;
+}
+.forward-arrow,
+.backward-arrow {
+  &:hover {
+    cursor: pointer;
+  }
+}

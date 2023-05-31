@@ -19,7 +19,7 @@ export const FooterLinks = [
       },
       {
         name: "Halal",
-        path: "/",
+        path: "/interest/calculator",
         available: true,
       },
       {
@@ -50,12 +50,12 @@ export const FooterLinks = [
       },
       {
         name: "Careers",
-        path: "/",
+        path: "/careers",
         available: true,
       },
       {
         name: "FAQS",
-        path: "/",
+        path: "/interest/calculator",
         available: true,
       },
       {

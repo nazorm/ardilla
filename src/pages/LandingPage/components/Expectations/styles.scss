@@ -65,7 +65,17 @@
     justify-content: space-between;
     align-items: center;
   }
-  .landing-social-icon{
+  .landing-social-icon {
     margin: 0 5px;
+  }
+}
+.forward-icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.forward-icon {
+  &:hover {
+    cursor: pointer;
   }
 }

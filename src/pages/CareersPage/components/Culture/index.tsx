@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import './styles.scss';
 import cultureImage1 from './assets/person1.svg'
 import cultureImage2 from './assets/person2.svg'
@@ -8,11 +8,36 @@ import peopleMatterImage from './assets/people-matter.svg';
 import { ardillaValues, peopleMatterData, perksData, positionData } from './data';
 import playIcon from '../../../../assets/icons/play-icon.svg';
 import { Carousel } from 'antd';
+import { ProgressStep } from '../../../components/ProgressBar';
+import forwardArrow from './assets/forward-arrow.svg';
+import backwardArrow from './assets/backward-arrow.svg';
 
 export const Culture = () => {
-   const responsive = [
+    const [activeSlide, setActiveSlide] = useState<number>(0)
+    const ref = useRef<any>();
+
+    const handleNext = () => {
+        if (activeSlide === 3) {
+            ref.current.goTo(0);
+        } else {
+            ref.current.goTo(activeSlide + 1);
+
+        }
+    }
+    const handlePrev = () => {
+        if (activeSlide === 0) {
+            ref.current.goTo(3);
+        } else {
+            ref.current.goTo(activeSlide - 1);
+
+        }
+    }
+    const getCurrentIndex = (currentSlide: number) => {
+        setActiveSlide(currentSlide)
+    }
+    const responsive = [
         {
-            breakpoint: 1000,
+            breakpoint: 700,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
@@ -150,10 +175,17 @@ export const Culture = () => {
                 <div className='position-container'>
                     <h2 className='position-container-heading'>Open Positions</h2>
                     <div className='roles'>
-                        <Carousel autoplay slidesToShow={2} dots={true} responsive={responsive} >
+                        <Carousel
+                            autoplay
+                            slidesToShow={2}
+                            dots={false}
+                            responsive={responsive}
+                            afterChange={getCurrentIndex}
+                            ref={ref}
+                        >
                             {positionData.map((data) => {
                                 return (
-                                    <div key={data.position} >
+                                    <div key={data.position} className='position-contain' >
                                         <div className='position-card'>
                                             <img src={data.positionImage} className='position-card__image' alt='position' />
                                             <div className='position-information'>
@@ -174,6 +206,11 @@ export const Culture = () => {
                                 )
                             })}
                         </Carousel>
+                    </div>
+                    <ProgressStep currentSlide={activeSlide + 1} noOfSlides={3} />
+                    <div className='arrow-container'>
+                        <img src={forwardArrow} className='forward-arrow' alt='forward' style={{ marginRight: '15px' }} onClick={handlePrev} />
+                        <img src={backwardArrow} className='backward-arrow' alt='forward' onClick={handleNext} />
                     </div>
                 </div>
             </section>

@@ -128,6 +128,9 @@
   box-shadow: 0px 10px 35px rgba(6, 46, 253, 0.25),
     0px 15px 70px rgba(251, 64, 64, 0.25), 0px 30px 90px rgba(136, 7, 247, 0.5);
   border-radius: 4px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .offers {
   width: 95%;
@@ -151,6 +154,13 @@
 .offer {
   width: 100%;
   margin-bottom: 10%;
+  padding: 20px 20px 20px 30px;
+  &:hover {
+    cursor: pointer;
+    background-color: #43027e;
+    border-radius: 24px;
+  
+  }
   &__image {
     margin-left: -15%;
     margin-bottom: -10%;
@@ -329,7 +339,7 @@
 }
 .traction-section {
   background-image: url("../../../../assets/traction-bg.png");
-  border: 1px solid #3D0072;
+  border: 1px solid #3d0072;
 }
 .traction-container {
   width: 90%;

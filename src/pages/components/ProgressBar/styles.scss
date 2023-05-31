@@ -1,0 +1,31 @@
+.bar-container,
+.progress-step {
+  width: 100%;
+  background-color: #f3f4f6;
+  border-radius: 16px;
+  height: 8px;
+  margin: 5% 0 0;
+  overflow:hidden;
+}
+
+.bar {
+  height: 8px;
+  background-color: #8807f7;
+  border-radius: 16px;
+  height: 8px;
+}
+
+.progress-step-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.progress-step {
+  width: 30%;
+}
+.progress-step--completed {
+  height: 8px;
+  background-color: #8807f7;
+  border-radius: 16px;
+  height: 8px;
+}
