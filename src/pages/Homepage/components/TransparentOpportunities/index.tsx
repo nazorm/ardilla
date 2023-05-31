@@ -9,32 +9,9 @@ import { Link } from 'react-router-dom';
 import { offers, pressReviews, testifierData, tractionDetails } from './data';
 import previewImage from '../../../../assets/ardilla-preview.svg'
 import spiro from "../../../../assets/icons/spiro.svg";
-
+import { responsive } from '../../../../utils/constants';
 
 export const TransparentOpportunities = () => {
-    const responsive = [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-            }
-        },
-        {
-            breakpoint: 800,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
     //TODO handle get started
     const handleGetStarted = () => {
 

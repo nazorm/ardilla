@@ -16,6 +16,19 @@ $primary-color: #240053;
   color: #ffffff;
   text-align: center;
 }
+@mixin section-info-text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  color: #3d0072;
+}
+@mixin section-info-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+  color: #3D0072;
+}
+
 .App {
 }
 .carousel-track {

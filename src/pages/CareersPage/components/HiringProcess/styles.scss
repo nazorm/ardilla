@@ -1,0 +1,86 @@
+@import "../../../../App.scss";
+
+.hiring-section,
+.applicant-section {
+  width: 100%;
+  background-color: #f3f4f6;
+  border: 1px solid transparent;
+}
+.hiring-container {
+  width: 90%;
+  margin: 10% auto;
+}
+.hiring-section-heading {
+  @include heading;
+  margin-bottom: 5%;
+}
+.stages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  @media only screen and (min-width: 700px) {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+  @media only screen and (min-width: 1000px) {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+.stage-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3d0072;
+  margin: 20px 0;
+}
+.stage-info {
+  @include section-info-text;
+  width: 250px;
+  @media only screen and (min-width: 350px) {
+    width: 310px;
+  }
+}
+
+.applicant-section {
+  background-color: #ffffff;
+}
+.applicant-container {
+  width: 90%;
+  position: relative;
+  margin: 10% auto 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media only screen and (min-width: 500px) {
+    flex-direction: row;
+  }
+}
+.applicant-image {
+  margin-bottom: 20px;
+  @media only screen and (min-width: 500px) {
+    width: 200px;
+  }
+  @media only screen and (min-width: 600px) {
+    width: 210px;
+  }
+  @media only screen and (min-width: 650px) {
+    width: 250px;
+  }
+  @media only screen and (min-width: 800px)  {
+    width: 300px;
+  }
+  @media only screen and (min-width: 1000px)  {
+    width: 350px;
+  }
+  @media only screen and (min-width: 1200px)  {
+    width: 400px;
+  }
+  @media only screen and (min-width: 1400px)  {
+    width: 500px;
+  }
+}
+.applicant-image:nth-child(2) {
+  @media only screen and (min-width: 500px) {
+    position: absolute;
+    left: 30%;
+  }
+}

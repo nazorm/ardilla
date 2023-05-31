@@ -1,0 +1,57 @@
+.careers-introduction-section {
+  width: 100%;
+}
+.careers-introduction-container {
+  width: 90%;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (min-width: 500px) {
+    width: 70%;
+  }
+  @media only screen and (min-width: 1024px) {
+    width: 80%;
+  }
+}
+
+.careers-introduction-text-container {
+  border: 1px solid;
+  border-radius: 6px;
+  width: 50%;
+  padding: 20px 0 0 0;
+  border: transparent;
+  @media only screen and (min-width: 1024px) {
+    padding: 40px 0 0 0;
+  }
+  @media only screen and (min-width: 1400px) {
+    padding: 60px 0 0 0;
+  }
+  &:nth-child(1) {
+    background: #f59e0b;
+    width: 70%;
+  }
+  &:nth-child(2) {
+    background: #e8356d;
+    justify-self: flex-end;
+    margin-left: 30%;
+  }
+  &:nth-child(3) {
+    background: #0d9488;
+  }
+}
+.careers-introduction-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
+  margin: 0;
+  @media only screen and (min-width: 1024px) {
+    font-size: 60px;
+    line-height: 99px;
+  }
+  @media only screen and (min-width: 1400px) {
+    font-size: 80px;
+    line-height: 99px;
+  }
+}

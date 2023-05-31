@@ -5,32 +5,9 @@ import { Carousel } from 'antd';
 import instagram from '../../assets/icons/instagram.svg'
 import twitter from '../../assets/icons/twitter.svg'
 import facebook from '../../assets/icons/facebook.svg'
-
+import { responsive } from '../../../../utils/constants';
 
 export const Expectations = () => {
-    const responsive = [
-        {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-            }
-        },
-        {
-            breakpoint: 800,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
     return (
         <>
             <section className='expectations-section'>
