@@ -1,12 +1,12 @@
 import React from 'react';
 import './styles.scss';
-import footerPhone from '../../../../assets/footer-phone.png'
+import footerPhone from '../../../assets/footer-phone.png'
 import { FooterLinks } from './footerlinks';
 import { Link } from 'react-router-dom';
-import instagram from '../../../../assets/icons/instagram.svg'
-import facebook from '../../../../assets/icons/facebook.svg'
-import linkedin from '../../../../assets/icons/linkedin.svg'
-import twitter from '../../../../assets/icons/twitter.svg'
+import instagram from '../../../assets/icons/instagram.svg'
+import facebook from '../../../assets/icons/facebook.svg'
+import linkedin from '../../../assets/icons/linkedin.svg'
+import twitter from '../../../assets/icons/twitter.svg'
 
 export const Footer = () => {
     return (

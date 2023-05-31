@@ -6,7 +6,7 @@ import instagram from '../../assets/icons/instagram.svg'
 import twitter from '../../assets/icons/twitter.svg'
 import facebook from '../../assets/icons/facebook.svg'
 import { responsive } from '../../../../utils/constants';
-import { ProgressBar } from '../../../components/ProgressBar';
+import { ProgressBar } from '../../../../components/ProgressBar';
 import forwardIcon from '../../assets/icons/forward-icon.svg'
 
 export const Expectations = () => {

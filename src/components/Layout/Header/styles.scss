@@ -12,6 +12,9 @@
     font-weight: 700;
     font-size: 14px;
     margin-right: 10px;
+    &:hover {
+      cursor: pointer;
+    }
   }
   @media only screen and (min-width: 700px) {
     padding: 10px 50px;
@@ -25,6 +28,9 @@
   @media only screen and (min-width: 700px) {
     margin-left: 10px;
     display: inline;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 .navlogo-container {

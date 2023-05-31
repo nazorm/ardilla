@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
-  @media only screen  and (min-width: 900px) {
+  @media only screen and (min-width: 900px) {
     display: flex;
   }
   &__list {
@@ -17,17 +17,22 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+    &:hover {
+      cursor: pointer;
+      color: #8807F7;
+      
+    }
   }
   .dropdown-caret {
     width: 10px;
     height: 10px;
     margin-left: 8px;
   }
-  
 }
 
-.beta{
+.beta {
   border: 1px solid #ffffff;
   padding: 1px;
   border-radius: 4px;
 }
+

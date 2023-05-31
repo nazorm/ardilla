@@ -8,7 +8,7 @@ import peopleMatterImage from './assets/people-matter.svg';
 import { ardillaValues, peopleMatterData, perksData, positionData } from './data';
 import playIcon from '../../../../assets/icons/play-icon.svg';
 import { Carousel } from 'antd';
-import { ProgressStep } from '../../../components/ProgressBar';
+import { ProgressStep } from '../../../../components/ProgressBar';
 import forwardArrow from './assets/forward-arrow.svg';
 import backwardArrow from './assets/backward-arrow.svg';
 

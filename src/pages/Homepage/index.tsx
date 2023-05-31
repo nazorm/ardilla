@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
-import { Header } from '../components/Layout/Header';
-import { Footer } from '../components/Layout/Footer';
+import { Header } from '../../components/Layout/Header';
+import { Footer } from '../../components/Layout/Footer';
 import { Introduction } from './components/Introduction';
 import { Products } from './components/Products';
 import { TransparentOpportunities } from './components/TransparentOpportunities';

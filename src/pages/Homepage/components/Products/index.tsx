@@ -3,7 +3,7 @@ import './styles.scss';
 import checkIcon from '../../../../assets/icons/check.svg'
 import { Carousel } from 'antd';
 import { productInfo } from './data';
-import { ProgressBar } from '../../../components/ProgressBar';
+import { ProgressBar } from '../../../../components/ProgressBar';
 
 export const Products = () => {
     const [activeSlide, setActiveSlide] = useState<number>(0)

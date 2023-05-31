@@ -1,9 +1,10 @@
 import React from 'react';
 import { TopNav } from '../TopNav';
 import './styles.scss';
-import logo from '../../../../assets/icons/logo.svg';
+import logo from '../../../assets/icons/logo.svg';
 import { Button } from '../../Button';
-import mapIcon from '../../../../assets/icons/map.svg';
+import mapIcon from '../../../assets/icons/map.svg';
+import webIcon from '../../../assets/icons/web-icon.svg'
 
 interface IHeaderProps {
     btnType: string;
@@ -26,7 +27,7 @@ export const Header = (props: IHeaderProps) => {
             <div className='cta-container'>
                 <span className='header__cta'>Sign In</span>
                 <Button text='Create Account' btnType={btnType} primaryAction={handleCreateAccount} />
-                <img src={mapIcon} alt='map'  className='map-icon'/>
+                <img src={btnType==='secondary' ? webIcon : mapIcon} alt='map'  className='map-icon'/>
             </div>
         </header>
     )

@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
-import btnIcon from '../../../assets/icons/invest-icon.svg';
-import btnIcon2 from '../../../assets/icons/invest-icon-white.svg';
+import btnIcon from '../../assets/icons/invest-icon.svg';
+import btnIcon2 from '../../assets/icons/invest-icon-white.svg';
 
 interface IButtonProps {
     text: string;

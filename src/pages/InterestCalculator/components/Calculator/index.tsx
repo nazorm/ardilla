@@ -7,8 +7,8 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 import { Select } from 'antd';
-import { TextInput } from '../../../components/Form/index';
-import { Button } from '../../../components/Button';
+import { TextInput } from '../../../../components/Form/index';
+import { Button } from '../../../../components/Button';
 import { Divider } from './components/Divider';
 import { demoSteps, faqData } from './data';
 import { Arcodion } from './components/Arcodion';

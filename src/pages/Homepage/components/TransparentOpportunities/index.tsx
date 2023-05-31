@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import './styles.scss';
-import { Button } from '../../../components/Button';
+import { Button } from '../../../../components/Button';
 import interestImage from '../../../../assets/interest-image.png'
 import stockArrow from '../../../../assets/stock-arrow.png'
 import playIcon from '../../../../assets/icons/play-icon.svg'

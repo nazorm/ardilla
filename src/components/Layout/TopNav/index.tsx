@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
-import {Dropdown } from 'antd';
-import dropdownCaret from '../../../../assets/icons/dropdown-caret.svg';
+import { Dropdown } from 'antd';
+import dropdownCaret from '../../../assets/icons/dropdown-caret.svg';
 
 export const TopNav = () => {
     const items = [
@@ -10,7 +10,7 @@ export const TopNav = () => {
             key: '1'
         },
         {
-            label: <a target="_blank" rel="noopener noreferrer" href="/">Invest <span style={{color: 'grey'}}>(coming soon)</span> </a>,
+            label: <a target="_blank" rel="noopener noreferrer" href="/">Invest <span style={{ color: 'grey' }}>(coming soon)</span> </a>,
             key: '2'
         },
         {
@@ -18,11 +18,11 @@ export const TopNav = () => {
             key: '3'
         },
         {
-            label: <a target="_blank" rel="noopener noreferrer" href="/">Budget <span style={{color: 'grey'}}>(coming soon)</span> </a>,
+            label: <a target="_blank" rel="noopener noreferrer" href="/">Budget <span style={{ color: 'grey' }}>(coming soon)</span> </a>,
             key: '4'
         },
         {
-            label: <a target="_blank" rel="noopener noreferrer" href="/">Insurance<span style={{color: 'grey'}}>(coming soon)</span> </a>,
+            label: <a target="_blank" rel="noopener noreferrer" href="/">Insurance<span style={{ color: 'grey' }}>(coming soon)</span> </a>,
             key: '5'
         },
 
@@ -32,27 +32,27 @@ export const TopNav = () => {
             <ul className='top-nav__list'>
                 <li className='top-nav__item'>
                     <Dropdown menu={{ items }}>
-                        <a href='/' className="top-nav__item">
+                        <a href='/home' className="top-nav__item">
                             Products
                             <img src={dropdownCaret} alt='dropdown-caret' className='dropdown-caret' />
                         </a>
                     </Dropdown>
                 </li>
                 <li className='top-nav__item'>
-                    <a href='/' className="top-nav__item">
+                    <a href='/interest/calculator' className="top-nav__item">
                         Business <span className='beta'>Beta</span>
                     </a>
                 </li>
                 <li className='top-nav__item'>
                     <Dropdown menu={{ items }}>
-                        <a href='/' className="top-nav__item">
+                        <a href='/careers' className="top-nav__item">
                             Comapny
                             <img src={dropdownCaret} alt='dropdown-caret' className='dropdown-caret' />
                         </a>
                     </Dropdown>
                 </li>
                 <li className='top-nav__item'>
-                    <a href='/' className="top-nav__item">
+                    <a href='/home' className="top-nav__item">
                         Learn
                     </a>
                 </li>

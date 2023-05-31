@@ -4,7 +4,7 @@ import landingoverlay from '../../assets/landing-overlay.png'
 import logo from '../../../../assets/icons/logo.svg';
 import hamburger from '../../assets/icons/hamburger.svg'
 import spotlight from '../../assets/icons/spotlight.svg'
-import { Button } from '../../../components/Button';
+import { Button } from '../../../../components/Button';
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm, Controller } from "react-hook-form";
