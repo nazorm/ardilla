@@ -53,7 +53,7 @@ export const Footer = () => {
             </div>
             <div className='license-container'>
                 <div className='socials-container'>
-                    <p className='copyright'>© 2023 Ardilla. All right reserved</p>
+                    {/* <p className='copyright'>© 2023 Ardilla. All right reserved</p> */}
                     <div className='socials'>
                         <a href='https://www.instagram.com/' rel='noopener noreferrer' target='_blank' className='social'><img src={instagram} alt='instagram' /></a>
                         <a href='https://www.facebook.com/' rel='noopener noreferrer' target='_blank' className='social'><img src={facebook} alt='instagram' /></a>

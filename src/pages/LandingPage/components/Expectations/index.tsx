@@ -59,7 +59,7 @@ export const Expectations = () => {
                 </div>
             </section>
             <section className='landing-footer'>
-                <p className='copyright'>© 2023 Ardilla. All right reserved</p>
+                {/* <p className='copyright'>© 2023 Ardilla. All right reserved</p> */}
                 <div className='landing-socials'>
                     <a href='https://www.instagram.com/' rel='noopener noreferrer' target='_blank' className='landing-social'><img src={instagram} alt='instagram' className='landing-social-icon' /></a>
                     <a href='https://www.facebook.com/' rel='noopener noreferrer' target='_blank' className='landing-social'><img src={facebook} alt='instagram' className='landing-social-icon' /></a>
