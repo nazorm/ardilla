@@ -9,6 +9,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm, Controller } from "react-hook-form";
 import { AModal } from '../Modal';
+import { Link } from 'react-router-dom';
 
 const schema = yup.object().shape({
     email: yup.string().email().required(),
@@ -16,6 +17,7 @@ const schema = yup.object().shape({
 });
 export const Introduction = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
     const showModal = () => {
         setIsModalOpen(true);
@@ -37,7 +39,9 @@ export const Introduction = () => {
     //TODO Handle Get started
     const handleGetStarted = () => {
     }
-
+    const handleMobileNav = () => {
+        setIsMobileNavOpen(!isMobileNavOpen)
+    }
     const onSubmit = (data: any) => {
         console.log(data)
         showModal()
@@ -47,10 +51,49 @@ export const Introduction = () => {
             <section className='landing-introduction'>
                 <header className='landing-header'>
                     <img src={logo} alt='logo' className='landing-logo' />
-                    <p className='feature'>• Features</p>
-                    <img src={hamburger} className='hamburger' alt='hamburger' />
+                    {/* <p className='feature'>• Features</p> */}
+                    <nav className='nav'>
+                        <ul className='nav-list'>
+                            <li className='nav-item'>
+                                <Link to={'/home'} className='nav-item'>
+                                    Business
+                                </Link>
+                            </li>
+                            <li className='nav-item'>
+                                <Link to={'/interest/calculator'} className='nav-item'>
+                                    Calculator
+                                </Link>
+                            </li>
+                            <li className='nav-item'>
+                                <Link to={'/careers'} className='nav-item'>
+                                    Careers
+                                </Link>
+                            </li>
+                        </ul>
+                    </nav>
+                    <img src={hamburger} className='hamburger' alt='hamburger' onClick={handleMobileNav} />
                 </header>
-
+                {isMobileNavOpen && (
+                    <div className='mobile-nav'>
+                        <ul className='mobile-nav-list'>
+                            <li className='mobile-nav-item'>
+                                <Link to={'/home'} className='mobile-nav-item'>
+                                    Business
+                                </Link>
+                            </li>
+                            <li className='mobile-nav-item'>
+                                <Link to={'/interest/calculator'} className='mobile-nav-item'>
+                                    Calculator
+                                </Link>
+                            </li>
+                            <li className='mobile-nav-item'>
+                                <Link to={'/careers'} className='mobile-nav-item'>
+                                    Careers
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                )}
                 <div className='landing-intro-text-container'>
                     <h1 className='landing-introduction__heading'>
                         Your  portal <br /> to more
